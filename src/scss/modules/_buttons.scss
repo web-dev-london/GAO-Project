@@ -1,0 +1,54 @@
+@use '../base' as *;
+
+%btn {
+  display: inline-flex;
+  align-items: center;
+  outline: none;
+  padding: 1.8rem 3rem;
+  gap: 4rem;
+  color: $white-color;
+  transition: all 0.4s;
+  margin-bottom: 1.2rem;
+  margin-top: 3rem;
+  border: 0;
+  cursor: pointer;
+  &:hover {
+    transform: scale(0.95);
+    transition: all 0.4s;
+    .icon--arrow {
+      transform: translateX(1.2rem);
+    }
+  }
+}
+
+.btn-primary {
+  @extend %btn;
+  background-color: $red;
+  transition: all 0.4s;
+  &:hover {
+    background: darken($red, 10%);
+  }
+}
+
+.btn-secondary {
+  @extend %btn;
+  background-color: $red;
+  padding: 1rem 3.5rem;
+  &:hover {
+    background: darken($red, 12%);
+  }
+}
+
+.btn-lucky {
+  @extend %btn;
+  padding: 1rem 3rem;
+  border: 1px solid $lightgrey;
+  outline: none;
+  color: $blue;
+  background: $white;
+  &:hover {
+    background: lighten($blue, 40%);
+    color: $white;
+    border: 0;
+  }
+}

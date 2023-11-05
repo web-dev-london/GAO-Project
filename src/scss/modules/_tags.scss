@@ -1,0 +1,49 @@
+@use '../base/colors' as *;
+@use '../modules/buttons' as *;
+@use '../utilities/container' as *;
+
+.interest__business {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+}
+
+.interest__item {
+  display: flex;
+  padding: 1.5rem 2.4rem;
+  border: 1px solid $lightgrey;
+  background-color: $white;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.interest__title,
+.interest__text {
+  text-transform: capitalize;
+}
+.interest__title {
+  font-size: 2.5rem;
+  color: $blue;
+}
+
+.interest__text {
+  font-size: 1.8rem;
+  color: $grey;
+}
+input[type='checkbox']:checked ~ .interest__text {
+  color: $blue;
+}
+.interest__border {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: 1px solid $blue;
+  opacity: 0;
+  transition: all ease 0.3s;
+}
+input[type='checkbox']:checked ~ .interest__border {
+  opacity: 1;
+}

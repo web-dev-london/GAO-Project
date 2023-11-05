@@ -1,0 +1,68 @@
+@use '../base/colors' as *;
+@use '../modules/buttons' as *;
+@use '../utilities/container' as *;
+@use '../utilities/grid' as *;
+
+.finish {
+  display: none;
+  // .finish__logo
+
+  &__logo {
+    margin-top: 5rem;
+  }
+
+  // .finish__header
+
+  &__header {
+    margin-top: 4rem;
+    max-width: 600px;
+  }
+
+  // .finish__title
+
+  &__title {
+    font-weight: 400;
+    color: $blue;
+    font-size: 5rem;
+    text-transform: capitalize;
+  }
+
+  // .finish__text
+
+  &__text {
+    font-size: 2rem;
+    color: $grey;
+  }
+
+  // .finish__footer
+
+  &__footer {
+    max-width: 600px;
+    margin-top: 4rem;
+  }
+
+  // .finish__footer-title
+
+  &__footer-title {
+    font-size: 2.5rem;
+    color: $blue;
+    text-transform: capitalize;
+  }
+
+  // .finish__footer-text1
+  // .finish__footer-text2
+
+  &__footer-text1,
+  &__footer-text2 {
+    color: $grey;
+    font-size: 2rem;
+  }
+
+  // .finish__link
+
+  &__link {
+    font-size: 2.2rem;
+    color: $white;
+    text-transform: capitalize;
+  }
+}

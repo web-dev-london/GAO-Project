@@ -1,0 +1,63 @@
+@use '../base' as *;
+@use '../helpers' as *;
+@use '../utilities' as *;
+@use '../modules' as *;
+
+.header__bg {
+  max-width: 960px;
+}
+.header__items {
+  margin-top: 5rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.header__logo {
+  width: 12rem;
+  height: 3rem;
+  margin-bottom: 8rem;
+  @include media('<=phone') {
+    position: relative;
+    top: 0;
+    left: 10%;
+    transform: translateX(-10%);
+  }
+  @include media('<=tablet') {
+    margin-bottom: 4rem;
+  }
+}
+.icon--arrow {
+  width: 24px;
+  height: 24px;
+  transition: all 0.4s;
+}
+.header__items-title {
+  color: $blue;
+  font-size: 5rem;
+  @include media('<=phone') {
+    font-size: 4rem;
+  }
+  @include media('<=tablet') {
+    font-size: 4.5rem;
+  }
+}
+.header__items-sub {
+  max-width: 600px;
+  font-size: 2rem;
+  color: $grey;
+  margin-top: 0;
+  margin-bottom: 4rem;
+  @include media('<=tablet') {
+    margin-bottom: 2rem;
+  }
+}
+
+.header__items-link {
+  margin-top: auto; /* FIXME: FOR MEDIA QUERIES */
+  color: $grey;
+  margin-bottom: 6rem;
+}
+.header__link {
+  color: $lightred;
+}

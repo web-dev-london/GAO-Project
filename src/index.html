@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GAO</title>
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style.min.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header__container grid grid--1x2 container">
+      <figure class="header__bg">
+        <source srcset="./img/bg.avif" type="image/avif">
+        <source srcset="./img/bg.webp" type="image/webp">
+        <img src="./img/bg.jpg" alt="Happy Girl" class="header__img" loading="lazy" />
+      </figure>
+      <div class="header__items">
+        <a href="index.html">
+          <svg class="icon header__logo">
+            <use xlink:href="./img/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <h3 class="header__items-title">
+          Create Account
+        </h3>
+        <p class="header__items-sub">
+          Please register your account!
+        </p>
+        <a href="./form.html" class="btn btn-primary">Create Account
+          <svg class="icon icon--arrow">
+            <use xlink:href="./img/sprite.svg#arrow-right"></use>
+          </svg>
+        </a>
+        <div class="header__items-link">
+          <span>Already have an account?</span>
+          <a href="#" class="header__link">Sign in</a>
+        </div>
+      </div>
+    </div>
+  </header>
+</body>
+<script src="./js/scripts.min.js"></script>
+
+</html>

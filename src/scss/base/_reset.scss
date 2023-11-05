@@ -1,0 +1,83 @@
+// Andy`s reset!
+
+@use '../base/font-face' as *;
+@use '../base/colors' as *;
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[role='list'],
+ol[role='list'],
+li[role='list'] {
+  list-style: none;
+  padding-left: 0;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  font-family: 'Author';
+  // background-color: lighten($primary-color, 8%);
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+::selection {
+  background: #2584ff;
+  color: #fff;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+  border: 0;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}

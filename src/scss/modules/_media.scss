@@ -1,0 +1,67 @@
+@use '../base/colors' as *;
+@use '../modules/buttons' as *;
+@use '../utilities/container' as *;
+
+.section__title {
+  color: $blue;
+  font-size: 5rem;
+  margin-top: 6rem;
+}
+.section__text {
+  margin-bottom: 4rem;
+  max-width: 60rem;
+  font-size: 2rem;
+  color: $grey;
+}
+.file {
+  // .file__item
+
+  &__item {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 36rem;
+    height: 36rem;
+    border: 1px dashed #051655;
+    background-color: $lightblue;
+  }
+
+  // .file__item--text
+
+  &__item--text {
+    margin-top: 3rem;
+    color: $blue;
+    font-size: 2rem;
+  }
+}
+
+.file__input--container {
+  max-width: 72rem;
+}
+
+.file {
+  // .file__input--group
+
+  &__input--group {
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #e5e4e1;
+    padding: 1rem;
+    &:first-of-type {
+      margin-bottom: 2rem;
+    }
+    > img {
+      margin-right: 2rem;
+    }
+    > input {
+      border: none;
+    }
+  }
+}
+
+.file__input--title {
+  font-size: 2.5rem;
+  color: $blue;
+}

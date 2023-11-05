@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Author';
+  src: local('Author'), url('/src/fonts/Author-Regular.woff'),
+    url('/src/fonts/Author-Regular.woff2'), url('/src/fonts/Author-Regular.ttf');
+
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Author';
+  src: local('Author'), url('/src/fonts/Author-Medium.woff'),
+    url('/src/fonts/Author-Medium.woff2'), url('/src/fonts/Author-Medium.ttf');
+
+  font-stretch: normal;
+  font-weight: 500;
+}
