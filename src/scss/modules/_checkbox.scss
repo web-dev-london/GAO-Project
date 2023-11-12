@@ -14,6 +14,7 @@
   background-color: $lightblue;
   align-items: center;
   position: relative;
+  cursor: pointer;
 }
 .checkbox__img {
   padding: 1rem;
@@ -22,6 +23,7 @@
 .checkbox__text {
   margin-left: 2rem;
   color: $blue;
+  max-width: 55%;
   font-size: 2rem;
 }
 .checkbox__fake {

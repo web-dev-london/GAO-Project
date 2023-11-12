@@ -76,5 +76,12 @@ if (document.querySelector('.form__step')) {
   stepForm();
 }
 
+const uploadFile = document.querySelector('.file__item');
+const input = document.querySelector('#uploadFile');
 
-
+input.addEventListener('change', () => {
+  let link = URL.createObjectURL(input.files[0]);
+  uploadFile.style.backgroundImage = `url(${link})`;
+  uploadFile.style.border = 0;
+  uploadFile.textContent = '';
+});

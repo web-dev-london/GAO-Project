@@ -237,6 +237,7 @@ p {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  cursor: pointer;
 }
 
 .checkbox__img {
@@ -247,6 +248,7 @@ p {
 .checkbox__text {
   margin-left: 2rem;
   color: #051655;
+  max-width: 55%;
   font-size: 2rem;
 }
 
@@ -504,6 +506,7 @@ input[type=checkbox]:checked ~ .checkbox__border {
   position: relative;
   max-width: 36rem;
   width: 100%;
+  cursor: pointer;
 }
 
 .input__label {
@@ -693,6 +696,13 @@ input[type=radio]:checked ~ .input__border {
   height: 36rem;
   border: 1px dashed #051655;
   background-color: #f3f6f9;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+}
+
+.file__item > img {
+  width: 8rem;
 }
 
 .file__item--text {
@@ -730,6 +740,11 @@ input[type=radio]:checked ~ .input__border {
 .file__input--title {
   font-size: 2.5rem;
   color: #051655;
+}
+
+.file__uploader--item2 {
+  -webkit-margin-before: 3.2rem;
+          margin-block-start: 3.2rem;
 }
 
 .interest__business {
@@ -877,10 +892,6 @@ input[type=checkbox]:checked ~ .interest__border {
   max-width: 460px;
 }
 
-.grid .about__textarea {
-  grid-column: 1/3;
-}
-
 textarea {
   width: 100%;
   max-width: 930px;
@@ -976,9 +987,20 @@ textarea {
   color: #c35b48;
 }
 
+@media (min-width: 768px) {
+  .file__uploader--item2 {
+    -webkit-margin-before: 0;
+            margin-block-start: 0;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid .about__textarea {
+    grid-column: 1/3;
   }
 }
 

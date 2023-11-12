@@ -25,6 +25,12 @@
     height: 36rem;
     border: 1px dashed #051655;
     background-color: $lightblue;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    > img {
+      width: 8rem;
+    }
   }
 
   // .file__item--text
@@ -64,4 +70,13 @@
 .file__input--title {
   font-size: 2.5rem;
   color: $blue;
+}
+
+.file__uploader--item2 {
+  margin-block-start: 3.2rem;
+}
+@media (min-width: 768px) {
+  .file__uploader--item2 {
+    margin-block-start: 0;
+  }
 }
